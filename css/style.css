@@ -1,0 +1,80 @@
+/* Marge par défaut */
+body {
+    margin: 0;
+}
+
+/* Hauteur minimale de la page */
+html, body {
+    height: 100%;
+}
+
+/* Style pour le header */
+header {
+    background-color: #fff;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Style pour la navbar */
+.navbar {
+    padding: 1rem;
+}
+
+/* Style pour le titre du blog */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style pour les liens de la navbar */
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+}
+
+/* Style pour la section principale */
+main {
+    flex: 1;
+}
+
+/* Style pour les articles */
+.card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.1rem;
+}
+
+.card-footer {
+    background-color: #fff;
+    border-top: none;
+    padding: 1rem;
+}
+
+/* Style pour le bouton "Lire la suite" */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}

@@ -1,0 +1,46 @@
+/* Marge pour l'en-tête */
+body {
+    padding-top: 50px;
+}
+
+/* Centrer le formulaire */
+#article-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Espacement entre les champs */
+#article-form div {
+    margin-bottom: 1em;
+}
+
+/* Style du bouton de soumission */
+#article-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+}
+
+#article-form button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+/* Style des champs de formulaire */
+#article-form input[type="text"],
+#article-form textarea,
+#article-form input[type="file"] {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.5em;
+    width: 100%;
+}
+
+#article-form input[type="text"]:focus,
+#article-form textarea:focus,
+#article-form input[type="file"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
