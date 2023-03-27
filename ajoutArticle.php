@@ -1,6 +1,4 @@
 <?php
-
-
 // Vérifier si le formulaire a été soumis
 if (isset($_POST['submit'])) {
 
@@ -34,10 +32,10 @@ if (isset($_POST['submit'])) {
     }
 
     // Connexion à la base de données
-    $servername = "localhost";
-    $username = "nom_utilisateur";
-    $password = "mot_de_passe";
-    $dbname = "nom_de_la_base_de_données";
+    $servername = "localhost:3306";
+    $username = "fhcn0606";
+    $password = "fMeE-5GqV-k3k@";
+    $dbname = "fhcn0606_blog";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -61,41 +59,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Créer un nouvel article</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-6fiPvvA+ouTk6wL64Gvusb0VQTaQeO1u6KgU6vXuTkB6R0UoPh2Y0Y1iKjx5r5q3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/ajoutArticle.css">
-
-</head>
-<body>
-<h1>Créer un nouvel article</h1>
-<form id="article-form">
-    <div>
-        <label for="title">Titre :</label>
-        <input type="text" id="title" name="title" required>
-    </div>
-    <div>
-        <label for="author">Auteur :</label>
-        <input type="text" id="author" name="author" required>
-    </div>
-    <div>
-        <label for="content">Contenu :</label>
-        <textarea id="content" name="content" required></textarea>
-    </div>
-    <div>
-        <label for="image">Image :</label>
-        <input type="file" id="image" name="image">
-    </div>
-    <button type="submit">Publier</button>
-</form>
-</body>
-</html>
 
 
 
